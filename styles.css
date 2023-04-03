@@ -1,0 +1,95 @@
+* {
+    letter-spacing: 0.02em;
+    line-height: normal;
+    box-sizing: border-box!important;
+    font-family: Arial, "Times New Roman", sans-serif;
+}
+
+body{
+    padding:100px;
+    background: #151515;
+    height: 100vh;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#frame {
+    width: 500px;
+    height: 100%;
+    border:2px solid mediumslateblue;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#buttons {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+
+    padding :30px;
+    border-bottom:2px solid mediumslateblue;
+}
+
+#buttons button{
+    background: mediumslateblue;
+    border-radius: 5px;
+    width:100px;
+    color:#fff;
+    font-size: 1.3rem;
+    height:100px;
+}
+
+
+#content{
+    padding :20px;
+    height: calc(100% - 160px);
+    overflow-y: scroll;
+}
+#content1, #content2, #content3 {
+    color:#fff;
+    display: none;
+}
+
+.content2{
+    padding-left:20px;
+    margin-bottom: 20px;
+}
+.content .form__submit, button {
+    background: mediumslateblue;
+    color:#fff;
+    height:25px;
+}
+#addForm {
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.editInput {
+    width: 30%;
+    margin:15px 5px;
+}
+
+/* scroll bar Start */
+/* width */
+#content::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+#content::-webkit-scrollbar-track {
+    background: #151515;
+}
+
+/* Handle */
+#content::-webkit-scrollbar-thumb {
+    background: mediumslateblue;
+}
+
+/* Handle on hover */
+#content::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+/* scroll bar End */
